@@ -1,6 +1,6 @@
 import {Endereco} from '../../exercicio3/scripts/Endereco.js'
 
-class Cliente{
+export  class Cliente{
     #nome
     #cpf
     #endereco
@@ -26,6 +26,6 @@ class Cliente{
 
 const endereco = new Endereco("rua axzu","3","belem", "para", "pais", "12324343")
 
-const cliente  = new Cliente("tibio","265725725", "{nome: fatima}", "5555-7777")
+const cliente  = new Cliente("tibio","265725725", endereco, "5555-7777")
 
 console.log(cliente)
