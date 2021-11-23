@@ -1,4 +1,4 @@
-class Endereco{
+ export class Endereco{
     #logradouro
     #numero
     #cidade
@@ -26,4 +26,5 @@ class Endereco{
         this.#pais = pais
         this.#cep = cep
     }
+    get logradouro(){ return this.#logradouro}
 }
