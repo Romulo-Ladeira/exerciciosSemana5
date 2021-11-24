@@ -1,7 +1,7 @@
 import { Cliente } from "../../exercicio4/scripts/Cliente.js";
 import { Endereco } from "../../exercicio3/scripts/Endereco.js";
 
-class Conta {
+export class Conta {
      #numeroDaConta
      #saldo
      #cliente
@@ -22,8 +22,14 @@ class Conta {
         this.#saldo = saldo
         this.#cliente = cliente
      }
+     set saldo (newSaldo){
+        this.#saldo = newSaldo
+     }
+
+     get saldo (){return this.#saldo}
 
 }
+
 
 const endereco = new Endereco("rua axzu","3","belem", "para", "pais", "12324343")
 
